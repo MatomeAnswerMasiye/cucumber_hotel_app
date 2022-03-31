@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "src/test/java/hotel_app_assessment_one/features",
-        tags = "@BookSuccessfully or @DeleteItinerary",
+        tags = "@BookSuccessfully and not @DeleteItinerary",
         glue = {"hotel_app_assessment_one.stepDefinition"},
         plugin = {"pretty", "html:target/cucumber.html"},
         monochrome = true
